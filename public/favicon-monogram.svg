@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="5" y="5" width="90" height="90" rx="8" fill="none" stroke="#c8590a" stroke-width="6"/>
+  <text x="50" y="68" text-anchor="middle" font-family="monospace" font-size="58" font-weight="800" fill="#c8590a">I</text>
+</svg>

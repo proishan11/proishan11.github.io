@@ -95,11 +95,9 @@ a:hover {
   text-decoration: none;
 }
 
-.site-brand .icon {
-  width: 30px;
-  height: 30px;
-  background: var(--accent);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+.site-logo {
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 

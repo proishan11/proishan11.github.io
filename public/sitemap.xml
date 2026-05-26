@@ -3,52 +3,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:64530/posts/graph-algorithms-mathematics-and-implementation/</loc>
+    <loc>http://localhost:1313/posts/graph-algorithms-mathematics-and-implementation/</loc>
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/posts/local-ai-needs-to-be-the-norm/</loc>
-    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:64530/posts/mathematics-in-web-publishing/</loc>
+    <loc>http://localhost:1313/posts/mathematics-in-web-publishing/</loc>
     <lastmod>2025-12-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/bookshelf/</loc>
+    <loc>http://localhost:1313/bookshelf/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/reading/</loc>
+    <loc>http://localhost:1313/reading/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:64530/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
