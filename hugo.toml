@@ -1,0 +1,36 @@
+baseURL = 'https://proishan11.github.io/'
+defaultContentLanguage = 'en'
+title = 'ISH.SYS'
+
+[params]
+  tagline = "DISTRIBUTED SYSTEMS · AGENTIC AI · ENGINEERING"
+  description = "Ishan's blog on distributed systems, agentic AI, and engineering"
+  author = "Ishan"
+  twitter = "Mr_Wellick"
+  github = "proishan11"
+  # goatcounter = "your-site-name"  # Uncomment and set to enable GoatCounter analytics
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss+xml"
+  baseName = "feed"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    guessSyntax = true
+    lineNos = false

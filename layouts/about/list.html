@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">ABOUT</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Location</div>
+      <div class="sidebar-value">INDIA</div>
+    </div>
+  </aside>
+  <div class="main-content">
+    <div class="post-section-label">Section · About</div>
+    <h1 class="list-page-title">About Me</h1>
+    <hr class="list-page-divider">
+
+    <div class="about-content">
+      <p>Hi, I'm <strong>Ishan</strong> — a software engineer who enjoys building things that work and figuring out why they sometimes don't.</p>
+
+      <p>I'm drawn to distributed systems, LLMs, and agentic AI — mostly because they sit right at the edge of what we know how to build reliably. I like the challenge of making complex systems simpler and more dependable.</p>
+
+      <p>This site is where I write about what I'm learning, share projects I'm working on, and keep notes on things I find interesting.</p>
+
+      <h2>Interests</h2>
+      <ul>
+        <li>Programming Languages</li>
+        <li>Distributed Systems</li>
+        <li>Databases</li>
+        <li>Infrastructure</li>
+        <li>Algorithms &amp; Problem Solving</li>
+        <li>Agentic AI &amp; LLMs</li>
+      </ul>
+
+      <h2>Connect</h2>
+      <div class="about-links">
+        <a href="https://github.com/proishan11" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/proishan11" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://x.com/Mr_Wellick" target="_blank" rel="noopener">X / Twitter ↗</a>
+        <a href="#" class="email-link" data-user="ishan.singh024" data-domain="gmail.com">Email ↗</a>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var el = document.querySelector('.email-link');
+        if (el) {
+          var u = el.getAttribute('data-user');
+          var d = el.getAttribute('data-domain');
+          el.href = 'mail' + 'to:' + u + '@' + d;
+        }
+      });
+    </script>
+  </div>
+</div>
+{{ end }}

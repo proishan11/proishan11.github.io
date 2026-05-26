@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local AI Needs to be the Norm | ISH.SYS</title>
+<meta name="description" content="Ishan&#39;s blog on distributed systems, agentic AI, and engineering">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="http://localhost:1313/posts/local-ai-needs-to-be-the-norm/">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Local AI Needs to be the Norm">
+<meta property="og:description" content="Ishan&#39;s blog on distributed systems, agentic AI, and engineering">
+<meta property="og:url" content="http://localhost:1313/posts/local-ai-needs-to-be-the-norm/">
+<meta property="og:site_name" content="ISH.SYS">
+<meta property="article:published_time" content="2025-12-30T00:00:00Z">
+<meta property="article:author" content="Cyrus">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Local AI Needs to be the Norm">
+<meta name="twitter:description" content="Ishan&#39;s blog on distributed systems, agentic AI, and engineering">
+<meta name="twitter:site" content="@Mr_Wellick">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script>
+  (function(){
+    var t=localStorage.getItem('theme-preference')||'auto';
+    var d=(t==='auto')?((window.matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light'):t;
+    document.documentElement.setAttribute('data-theme',d);
+  })();
+</script>
+</head>
+<body><header class="site-header">
+  <a href="/" class="site-brand">
+    <div class="icon"></div>
+    <div class="site-brand-text">
+      <div class="site-title">ISH.SYS</div>
+      <div class="site-tagline">DISTRIBUTED SYSTEMS · AGENTIC AI · ENGINEERING</div>
+    </div>
+  </a>
+  <nav class="site-nav">
+    <a href="/about/" >About</a>
+    <a href="/posts/" class="active">Posts</a>
+    <a href="/projects/" >Projects</a>
+    <a href="/bookshelf/" >Bookshelf</a>
+    <a href="/reading/" >Reading</a>
+    <a href="/IshanResume_2026.pdf" download>Resume</a>
+    <button onclick="setTheme('auto')" id="theme-auto">Auto</button>
+    <button onclick="setTheme('light')" id="theme-light">Light</button>
+    <button onclick="setTheme('dark')" id="theme-dark">Dark</button>
+  </nav>
+</header>
+<div class="header-divider"></div>
+  <main>
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">POSTS</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Filed</div>
+      <div class="sidebar-value">2025-12-30</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Words</div>
+      <div class="sidebar-value">429</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Read</div>
+      <div class="sidebar-value">3 Min</div>
+    </div>
+  </aside>
+  <article class="main-content">
+    <div class="post-section-label">posts</div>
+    <h1 class="post-title">Local AI Needs to be the Norm</h1>
+    
+    <p class="post-subtitle">Local AI models should be the default.</p>
+    
+    <div class="post-meta">
+      <span>Filed <strong>2025-12-30</strong></span>
+      <span>Words <strong>429</strong></span>
+      <span>Read <strong>3 Min</strong></span>
+      
+      <span>By <strong>CYRUS</strong></span>
+      
+    </div>
+    
+    <nav class="toc">
+      <div class="toc-title">Contents</div>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#available-tooling">Available Tooling</a></li>
+    <li><a href="#why-this-matters">Why This Matters</a></li>
+    <li><a href="#the-path-forward">The Path Forward</a></li>
+  </ul>
+</nav>
+    </nav>
+    
+    <div class="post-body">
+      <p>One of the current trends in modern software is for developers to slap an API call to OpenAI or Anthropic for features within their app. Reasonable people can quibble with whether those features are actually bringing value to users, but what I want to discuss is the fundamental concept of taking on a dependency to a cloud hosted AI model for applications.</p>
+<p>This laziness is creating a generation of software that is fragile, invades your privacy, and fundamentally broken. We are building applications that stop working the moment the server crashes or a credit card expires.</p>
+<p>We need to return to a habit of building software where our local devices do the work. The silicon in our pocket is mind bogglingly faster than what was available a decade ago. It has a dedicated Neural Engine sitting there, mostly idle, while we wait for a JSON response from a server farm in Virginia. That&rsquo;s ridiculous.</p>
+<h2 id="available-tooling">Available Tooling</h2>
+<p>I can only speak on the tooling available within the Apple ecosystem since that&rsquo;s what I focused initial development efforts on. In the last year, Apple has invested heavily here to allow developers to make use of a built-in local AI model easily.</p>
+<p>The core flow looks roughly like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">FoundationModels</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">model</span> <span class="p">=</span> <span class="n">SystemLanguageModel</span><span class="p">.</span><span class="k">default</span>
+</span></span><span class="line"><span class="cl"><span class="k">guard</span> <span class="n">model</span><span class="p">.</span><span class="n">availability</span> <span class="p">==</span> <span class="p">.</span><span class="n">available</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">session</span> <span class="p">=</span> <span class="n">LanguageModelSession</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">    Provide a brutalist, information-dense summary in Markdown format.
+</span></span></span><span class="line"><span class="cl"><span class="s">    - Use **bold** for key concepts.
+</span></span></span><span class="line"><span class="cl"><span class="s">    - Use bullet points for facts.
+</span></span></span><span class="line"><span class="cl"><span class="s">    - No fluff. Just facts.
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">response</span> <span class="p">=</span> <span class="k">try</span> <span class="n">await</span> <span class="n">session</span><span class="p">.</span><span class="n">respond</span><span class="p">(</span><span class="n">options</span><span class="p">:</span> <span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">maximumResponseTokens</span><span class="p">:</span> <span class="mi">1_000</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">articleText</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">markdown</span> <span class="p">=</span> <span class="n">response</span><span class="p">.</span><span class="n">content</span>
+</span></span></code></pre></div><p>And for longer content, we can chunk the plain text (around 10k characters per chunk), produce concise &ldquo;facts only&rdquo; notes per chunk, then runs a second pass to combine them into a final summary.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>The benefits of local AI are clear:</p>
+<ul>
+<li><strong>Privacy</strong> — your data never leaves the device</li>
+<li><strong>Reliability</strong> — no server dependency, no API key expiry</li>
+<li><strong>Speed</strong> — no network latency, instant responses</li>
+<li><strong>Cost</strong> — no per-token billing, no usage caps</li>
+</ul>
+<p>The tradeoff is model capability. A 3B parameter model on your phone won&rsquo;t match GPT-4. But for the vast majority of use cases — summarization, classification, extraction, rewriting — it&rsquo;s more than enough.</p>
+<h2 id="the-path-forward">The Path Forward</h2>
+<p>We need to stop treating cloud AI as the default and start treating it as the exception. Use local models for everything you can. Fall back to cloud only when the task genuinely requires it.</p>
+<p>The tools exist today. The hardware is ready. The only thing missing is the habit.</p>
+
+    </div>
+  </article>
+</div>
+
+  </main><footer class="site-footer">
+  <div class="footer-links">
+    <a href="/feed.xml">RSS</a>
+    <span class="footer-sep">·</span>
+    <a href="https://github.com/proishan11" target="_blank" rel="noopener">GitHub</a><span class="footer-sep">·</span>
+    <a href="https://x.com/Mr_Wellick" target="_blank" rel="noopener">Twitter</a><span class="footer-sep">·</span>
+    <a href="/about/">About</a>
+  </div>
+  <p>&copy; 2026 ISH.SYS · Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></p>
+</footer>
+<script src="/js/theme.js"></script>
+</body>
+</html>

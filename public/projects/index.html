@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | ISH.SYS</title>
+<meta name="description" content="Notable projects and open source work.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="http://localhost:1313/projects/">
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects">
+<meta property="og:description" content="Notable projects and open source work.">
+<meta property="og:url" content="http://localhost:1313/projects/">
+<meta property="og:site_name" content="ISH.SYS">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Projects">
+<meta name="twitter:description" content="Notable projects and open source work.">
+<meta name="twitter:site" content="@Mr_Wellick">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/projects/feed.xml" title="ISH.SYS - rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<script>
+  (function(){
+    var t=localStorage.getItem('theme-preference')||'auto';
+    var d=(t==='auto')?((window.matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light'):t;
+    document.documentElement.setAttribute('data-theme',d);
+  })();
+</script>
+</head>
+<body><header class="site-header">
+  <a href="/" class="site-brand">
+    <div class="icon"></div>
+    <div class="site-brand-text">
+      <div class="site-title">ISH.SYS</div>
+      <div class="site-tagline">DISTRIBUTED SYSTEMS · AGENTIC AI · ENGINEERING</div>
+    </div>
+  </a>
+  <nav class="site-nav">
+    <a href="/about/" >About</a>
+    <a href="/posts/" >Posts</a>
+    <a href="/projects/" class="active">Projects</a>
+    <a href="/bookshelf/" >Bookshelf</a>
+    <a href="/reading/" >Reading</a>
+    <a href="/IshanResume_2026.pdf" download>Resume</a>
+    <button onclick="setTheme('auto')" id="theme-auto">Auto</button>
+    <button onclick="setTheme('light')" id="theme-light">Light</button>
+    <button onclick="setTheme('dark')" id="theme-dark">Dark</button>
+  </nav>
+</header>
+<div class="header-divider"></div>
+  <main>
+
+
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">PROJECTS</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Count</div>
+      <div class="sidebar-value">004</div>
+    </div>
+  </aside>
+  <div class="main-content">
+    <div class="post-section-label">Section · Projects</div>
+    <h1 class="list-page-title">Projects</h1>
+    <hr class="list-page-divider">
+    <div class="list-page-header">
+      <span>All Projects</span>
+      <span class="total">004 Total</span>
+    </div>
+
+    <div class="project-list">
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Distributed KV Store</h3>
+          <span class="project-status active">active</span>
+        </div>
+        <p class="project-desc">A fault-tolerant key-value store built with Raft consensus. Supports leader election, log replication, and snapshotting.</p>
+        <div class="project-tech">
+          
+          <span class="project-tech-tag">Go</span>
+          
+          <span class="project-tech-tag">Raft</span>
+          
+          <span class="project-tech-tag">gRPC</span>
+          
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/proishan11/distributed-kv" target="_blank" rel="noopener">Source ↗</a>
+          
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Agent Framework</h3>
+          <span class="project-status active">active</span>
+        </div>
+        <p class="project-desc">A lightweight framework for building multi-step AI agents with tool use, memory, and planning capabilities.</p>
+        <div class="project-tech">
+          
+          <span class="project-tech-tag">Python</span>
+          
+          <span class="project-tech-tag">LangChain</span>
+          
+          <span class="project-tech-tag">OpenAI</span>
+          
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/proishan11/agent-framework" target="_blank" rel="noopener">Source ↗</a>
+          
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Log Aggregator</h3>
+          <span class="project-status archived">archived</span>
+        </div>
+        <p class="project-desc">Real-time log aggregation pipeline using Kafka and ClickHouse. Handles millions of events per minute.</p>
+        <div class="project-tech">
+          
+          <span class="project-tech-tag">Rust</span>
+          
+          <span class="project-tech-tag">Kafka</span>
+          
+          <span class="project-tech-tag">ClickHouse</span>
+          
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/proishan11/log-aggregator" target="_blank" rel="noopener">Source ↗</a>
+          
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">Portfolio Site</h3>
+          <span class="project-status active">active</span>
+        </div>
+        <p class="project-desc">This website. A minimal, brutalist Hugo blog with markdown, math, and code support. Deployed on GitHub Pages.</p>
+        <div class="project-tech">
+          
+          <span class="project-tech-tag">Hugo</span>
+          
+          <span class="project-tech-tag">CSS</span>
+          
+          <span class="project-tech-tag">GitHub Actions</span>
+          
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/proishan11/proishan11.github.io" target="_blank" rel="noopener">Source ↗</a>
+          <a href="https://proishan11.github.io" target="_blank" rel="noopener">Demo ↗</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  </main><footer class="site-footer">
+  <div class="footer-links">
+    <a href="/feed.xml">RSS</a>
+    <span class="footer-sep">·</span>
+    <a href="https://github.com/proishan11" target="_blank" rel="noopener">GitHub</a><span class="footer-sep">·</span>
+    <a href="https://x.com/Mr_Wellick" target="_blank" rel="noopener">Twitter</a><span class="footer-sep">·</span>
+    <a href="/about/">About</a>
+  </div>
+  <p>&copy; 2026 ISH.SYS · Built with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></p>
+</footer>
+<script src="/js/theme.js"></script>
+</body>
+</html>

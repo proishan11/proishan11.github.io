@@ -1,0 +1,27 @@
+- title: "Distributed KV Store"
+  description: "A fault-tolerant key-value store built with Raft consensus. Supports leader election, log replication, and snapshotting."
+  tech: ["Go", "Raft", "gRPC"]
+  repo: "https://github.com/proishan11/distributed-kv"
+  demo: ""
+  status: "active"
+
+- title: "Agent Framework"
+  description: "A lightweight framework for building multi-step AI agents with tool use, memory, and planning capabilities."
+  tech: ["Python", "LangChain", "OpenAI"]
+  repo: "https://github.com/proishan11/agent-framework"
+  demo: ""
+  status: "active"
+
+- title: "Log Aggregator"
+  description: "Real-time log aggregation pipeline using Kafka and ClickHouse. Handles millions of events per minute."
+  tech: ["Rust", "Kafka", "ClickHouse"]
+  repo: "https://github.com/proishan11/log-aggregator"
+  demo: ""
+  status: "archived"
+
+- title: "Portfolio Site"
+  description: "This website. A minimal, brutalist Hugo blog with markdown, math, and code support. Deployed on GitHub Pages."
+  tech: ["Hugo", "CSS", "GitHub Actions"]
+  repo: "https://github.com/proishan11/proishan11.github.io"
+  demo: "https://proishan11.github.io"
+  status: "active"

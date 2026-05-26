@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>ISH.SYS</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on ISH.SYS</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Local AI Needs to be the Norm</title>
+				<link>http://localhost:1313/posts/local-ai-needs-to-be-the-norm/</link>
+				<pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/local-ai-needs-to-be-the-norm/</guid>
+				<description>&lt;p&gt;One of the current trends in modern software is for developers to slap an API call to OpenAI or Anthropic for features within their app. Reasonable people can quibble with whether those features are actually bringing value to users, but what I want to discuss is the fundamental concept of taking on a dependency to a cloud hosted AI model for applications.&lt;/p&gt;&#xA;&lt;p&gt;This laziness is creating a generation of software that is fragile, invades your privacy, and fundamentally broken. We are building applications that stop working the moment the server crashes or a credit card expires.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Mathematics in Web Publishing</title>
+				<link>http://localhost:1313/posts/mathematics-in-web-publishing/</link>
+				<pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/mathematics-in-web-publishing/</guid>
+				<description>&lt;p&gt;One of the challenges of technical writing on the web is properly rendering mathematical notation. With KaTeX, we can render both inline and display math beautifully.&lt;/p&gt;&#xA;&lt;h2 id=&#34;inline-math&#34;&gt;Inline Math&lt;/h2&gt;&#xA;&lt;p&gt;The quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ is one of the most well-known formulas in mathematics. We can also write Euler&amp;rsquo;s number $e \approx 2.71828$ inline.&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-math&#34;&gt;Display Math&lt;/h2&gt;&#xA;&lt;p&gt;Euler&amp;rsquo;s identity is often cited as the most beautiful equation:&lt;/p&gt;&#xA;&lt;p&gt;$$e^{i\pi} + 1 = 0$$&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

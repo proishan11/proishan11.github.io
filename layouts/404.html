@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Status</div>
+      <div class="sidebar-value">404</div>
+    </div>
+  </aside>
+  <div class="main-content">
+    <div class="post-section-label">Error</div>
+    <h1 class="list-page-title">Not Found</h1>
+    <hr class="list-page-divider">
+    <div class="about-content">
+      <p>The page you're looking for doesn't exist, was moved, or never existed in the first place.</p>
+      <p>
+        <a href="{{ "/" | relURL }}" style="color: var(--accent); text-decoration: underline;">← Back to home</a>
+      </p>
+    </div>
+  </div>
+</div>
+{{ end }}

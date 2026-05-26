@@ -1,0 +1,25 @@
+- year: 2025
+  books:
+    - title: "Designing Data-Intensive Applications"
+      author: "Martin Kleppmann"
+      cover: "https://covers.openlibrary.org/b/isbn/9781449373320-M.jpg"
+      status: "reading"
+    - title: "The Pragmatic Programmer"
+      author: "David Thomas & Andrew Hunt"
+      cover: "https://covers.openlibrary.org/b/isbn/9780135957059-M.jpg"
+      status: "finished"
+
+- year: 2024
+  books:
+    - title: "The Godfather"
+      author: "Mario Puzo"
+      cover: "https://covers.openlibrary.org/b/isbn/9780451205766-M.jpg"
+      status: "finished"
+    - title: "Deep Learning"
+      author: "Ian Goodfellow"
+      cover: "https://covers.openlibrary.org/b/isbn/9780262035613-M.jpg"
+      status: "finished"
+    - title: "Understanding Distributed Systems"
+      author: "Roberto Vitillo"
+      cover: "https://covers.openlibrary.org/b/isbn/9781838430207-M.jpg"
+      status: "finished"

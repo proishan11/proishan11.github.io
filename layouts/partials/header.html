@@ -1,0 +1,20 @@
+<header class="site-header">
+  <a href="{{ "/" | relURL }}" class="site-brand">
+    <div class="icon"></div>
+    <div class="site-brand-text">
+      <div class="site-title">{{ .Site.Title }}</div>
+      <div class="site-tagline">{{ .Site.Params.tagline }}</div>
+    </div>
+  </a>
+  <nav class="site-nav">
+    <a href="{{ "about/" | relURL }}" {{ if eq .Section "about" }}class="active"{{ end }}>About</a>
+    <a href="{{ "posts/" | relURL }}" {{ if eq .Section "posts" }}class="active"{{ end }}>Posts</a>
+    <a href="{{ "projects/" | relURL }}" {{ if eq .Section "projects" }}class="active"{{ end }}>Projects</a>
+    <a href="{{ "bookshelf/" | relURL }}" {{ if eq .Section "bookshelf" }}class="active"{{ end }}>Bookshelf</a>
+    <a href="{{ "reading/" | relURL }}" {{ if eq .Section "reading" }}class="active"{{ end }}>Reading</a>
+    <a href="{{ "IshanResume_2026.pdf" | relURL }}" download>Resume</a>
+    <button onclick="setTheme('auto')" id="theme-auto">Auto</button>
+    <button onclick="setTheme('light')" id="theme-light">Light</button>
+    <button onclick="setTheme('dark')" id="theme-dark">Dark</button>
+  </nav>
+</header>

@@ -1,0 +1,35 @@
+- title: "The Morning Paper"
+  url: "https://blog.acolyer.org/"
+  source: "blog.acolyer.org"
+  description: "An outstanding CS research paper every weekday morning, covering distributed systems, databases, and more."
+  tags: ["distributed-systems", "research"]
+
+- title: "Lil'Log"
+  url: "https://lilianweng.github.io/"
+  source: "lilianweng.github.io"
+  description: "In-depth technical posts on machine learning, LLMs, and AI agents by Lilian Weng."
+  tags: ["ai", "ml", "agents"]
+
+- title: "Anthropic Research Blog"
+  url: "https://www.anthropic.com/research"
+  source: "anthropic.com"
+  description: "Research updates on AI safety, interpretability, and frontier model development."
+  tags: ["ai", "safety", "research"]
+
+- title: "Jepsen"
+  url: "https://jepsen.io/analyses"
+  source: "jepsen.io"
+  description: "Rigorous distributed systems correctness analyses by Kyle Kingsbury."
+  tags: ["distributed-systems", "testing"]
+
+- title: "Simon Willison's Weblog"
+  url: "https://simonwillison.net/"
+  source: "simonwillison.net"
+  description: "Prolific writing on LLMs, AI tooling, open source, and practical engineering."
+  tags: ["ai", "engineering", "open-source"]
+
+- title: "The Gradient"
+  url: "https://thegradient.pub/"
+  source: "thegradient.pub"
+  description: "Long-form perspectives on AI research, policy, and the machine learning ecosystem."
+  tags: ["ai", "ml", "research"]

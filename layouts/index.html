@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $posts := (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+{{ $count := len $posts }}
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">POSTS</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Pages</div>
+      <div class="sidebar-value">{{ printf "%03d" $count }}</div>
+    </div>
+  </aside>
+  <div class="main-content">
+    <div class="post-section-label">Section · Posts</div>
+    <h1 class="list-page-title">All Posts</h1>
+    <hr class="list-page-divider">
+    <div class="list-page-header">
+      <span>Posts · Latest First</span>
+      <span class="total">{{ printf "%03d" $count }} Total</span>
+    </div>
+    <ul class="post-list">
+      {{ range $posts }}
+      <li class="post-list-item">
+        <div class="post-list-date">
+          <div class="year">{{ .Date.Format "2006" }}</div>
+          <div class="monthday">{{ .Date.Format "Jan 02" }}</div>
+        </div>
+        <div class="post-list-body">
+          <a href="{{ .Permalink }}" class="post-list-title">{{ .Title }}</a>
+          {{ with .Params.subtitle }}
+          <div class="post-list-summary">{{ . }}</div>
+          {{ end }}
+          <a href="{{ .Permalink }}" class="post-list-read">Read→</a>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{ $projects := site.Data.projects }}
+{{ $count := len $projects }}
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">PROJECTS</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Count</div>
+      <div class="sidebar-value">{{ printf "%03d" $count }}</div>
+    </div>
+  </aside>
+  <div class="main-content">
+    <div class="post-section-label">Section · Projects</div>
+    <h1 class="list-page-title">Projects</h1>
+    <hr class="list-page-divider">
+    <div class="list-page-header">
+      <span>All Projects</span>
+      <span class="total">{{ printf "%03d" $count }} Total</span>
+    </div>
+
+    <div class="project-list">
+      {{ range $projects }}
+      <div class="project-card">
+        <div class="project-header">
+          <h3 class="project-title">{{ .title }}</h3>
+          <span class="project-status {{ .status }}">{{ .status }}</span>
+        </div>
+        <p class="project-desc">{{ .description }}</p>
+        <div class="project-tech">
+          {{ range .tech }}
+          <span class="project-tech-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        <div class="project-links">
+          {{ with .repo }}<a href="{{ . }}" target="_blank" rel="noopener">Source ↗</a>{{ end }}
+          {{ with .demo }}<a href="{{ . }}" target="_blank" rel="noopener">Demo ↗</a>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

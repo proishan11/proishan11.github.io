@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">{{ .Section | upper }}</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Filed</div>
+      <div class="sidebar-value">{{ .Date.Format "2006-01-02" }}</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Words</div>
+      <div class="sidebar-value">{{ .WordCount }}</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Read</div>
+      <div class="sidebar-value">{{ .ReadingTime }} Min</div>
+    </div>
+  </aside>
+  <article class="main-content">
+    <div class="post-section-label">{{ .Section }}</div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Params.subtitle }}
+    <p class="post-subtitle">{{ . }}</p>
+    {{ end }}
+    <div class="post-meta">
+      <span>Filed <strong>{{ .Date.Format "2006-01-02" }}</strong></span>
+      <span>Words <strong>{{ .WordCount }}</strong></span>
+      <span>Read <strong>{{ .ReadingTime }} Min</strong></span>
+      {{ with .Params.author }}
+      <span>By <strong>{{ . | upper }}</strong></span>
+      {{ end }}
+    </div>
+    {{ if and .TableOfContents (gt .WordCount 300) }}
+    <nav class="toc">
+      <div class="toc-title">Contents</div>
+      {{ .TableOfContents }}
+    </nav>
+    {{ end }}
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
+{{ end }}

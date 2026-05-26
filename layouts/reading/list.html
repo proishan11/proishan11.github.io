@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ $items := site.Data.reading }}
+{{ $count := len $items }}
+<div class="content-wrapper">
+  <aside class="sidebar">
+    <div class="sidebar-item">
+      <div class="sidebar-label">Section</div>
+      <div class="sidebar-value">READING</div>
+    </div>
+    <div class="sidebar-item">
+      <div class="sidebar-label">Items</div>
+      <div class="sidebar-value">{{ printf "%03d" $count }}</div>
+    </div>
+  </aside>
+  <div class="main-content">
+    <div class="post-section-label">Section · Reading</div>
+    <h1 class="list-page-title">Reading List</h1>
+    <hr class="list-page-divider">
+    <div class="list-page-header">
+      <span>Blogs · Resources · Papers</span>
+      <span class="total">{{ printf "%03d" $count }} Total</span>
+    </div>
+
+    <ul class="reading-list">
+      {{ range $items }}
+      <li class="reading-item">
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="reading-item-title">{{ .title }}</a>
+        <div class="reading-item-source">{{ .source }} ↗</div>
+        <div class="reading-item-desc">{{ .description }}</div>
+        {{ with .tags }}
+        <div class="reading-item-tags">
+          {{ range . }}
+          <span class="reading-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
