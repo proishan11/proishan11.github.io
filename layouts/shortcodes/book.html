@@ -1,0 +1,10 @@
+<div class="book-entry">
+  <div class="book-entry-header">
+    <span class="book-entry-title">{{ .Get "title" }}</span>
+    {{ with .Get "stars" }}
+    <span class="book-entry-stars">{{ range seq (int .) }}★{{ end }}{{ $empty := sub 5 (int .) }}{{ if gt $empty 0 }}{{ range seq $empty }}☆{{ end }}{{ end }}</span>
+    {{ end }}
+  </div>
+  {{ with .Get "subtitle" }}<div class="book-entry-subtitle">{{ . }}</div>{{ end }}
+  {{ if .Inner }}<div class="book-entry-review">{{ .Inner | markdownify }}</div>{{ end }}
+</div>
