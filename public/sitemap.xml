@@ -1,1 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://proishan11.github.io/</loc><lastmod>2025-12-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/posts/local-ai-needs-to-be-the-norm/</loc><lastmod>2025-12-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/posts/</loc><lastmod>2025-12-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/posts/mathematics-in-web-publishing/</loc><lastmod>2025-12-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/bookshelf/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/projects/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/reading/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url><loc>https://proishan11.github.io/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:64530/posts/graph-algorithms-mathematics-and-implementation/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/posts/</loc>
+    <lastmod>2025-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/posts/local-ai-needs-to-be-the-norm/</loc>
+    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/posts/mathematics-in-web-publishing/</loc>
+    <lastmod>2025-12-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/about/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/bookshelf/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/projects/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/reading/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:64530/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

@@ -1,8 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on ISH.SYS</title><link>https://proishan11.github.io/posts/</link><description>Recent content in Posts on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/><item><title>Local AI Needs to be the Norm</title><link>https://proishan11.github.io/posts/local-ai-needs-to-be-the-norm/</link><pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/local-ai-needs-to-be-the-norm/</guid><description>&lt;p&gt;One of the current trends in modern software is for developers to slap an API call to OpenAI or Anthropic for features within their app. Reasonable people can quibble with whether those features are actually bringing value to users, but what I want to discuss is the fundamental concept of taking on a dependency to a cloud hosted AI model for applications.&lt;/p&gt;
-&lt;p&gt;This laziness is creating a generation of software that is fragile, invades your privacy, and fundamentally broken. We are building applications that stop working the moment the server crashes or a credit card expires. &lt;span class="sidenote-wrap"&gt;&lt;span class="sidenote-mark"&gt;*&lt;/span&gt;&lt;span class="sidenote"&gt;Fun fact: In 2024, a major cloud provider outage took down AI features in thousands of apps simultaneously. Local models would have kept working.&lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;</description></item><item><title>Mathematics in Web Publishing</title><link>https://proishan11.github.io/posts/mathematics-in-web-publishing/</link><pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/mathematics-in-web-publishing/</guid><description>&lt;p&gt;One of the challenges of technical writing on the web is properly rendering mathematical notation. With KaTeX, we can render both inline and display math beautifully.&lt;/p&gt;
-&lt;h2 id="inline-math"&gt;Inline Math&lt;/h2&gt;
-&lt;p&gt;The quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ is one of the most well-known formulas in mathematics. We can also write Euler&amp;rsquo;s number $e \approx 2.71828$ inline.&lt;/p&gt;
-&lt;h2 id="display-math"&gt;Display Math&lt;/h2&gt;
-&lt;p&gt;Euler&amp;rsquo;s identity is often cited as the most beautiful equation:&lt;/p&gt;
-&lt;p&gt;$$e^{i\pi} + 1 = 0$$&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on ISH.SYS</title>
+		<link>http://localhost:64530/posts/</link>
+		<description>Recent content in Posts on ISH.SYS</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:64530/posts/feed.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Graph Algorithms: Mathematics &amp; Implementation</title>
+				<link>http://localhost:64530/posts/graph-algorithms-mathematics-and-implementation/</link>
+				<pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:64530/posts/graph-algorithms-mathematics-and-implementation/</guid>
+				<description>&lt;p&gt;Graphs are one of the most versatile data structures in computer science. They model everything from social networks to routing protocols to dependency resolution. In this post, we&amp;rsquo;ll build up graph theory from first principles — formal definitions, mathematical analysis, and clean Python implementations for each algorithm. &lt;span class=&#34;sidenote-wrap&#34;&gt;&lt;span class=&#34;sidenote-mark&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;sidenote&#34;&gt;This post assumes familiarity with basic data structures (arrays, hash maps, heaps) and Big-O notation.&lt;/span&gt;&lt;/span&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;foundations&#34;&gt;Foundations&lt;/h2&gt;&#xA;&lt;h3 id=&#34;formal-definition&#34;&gt;Formal Definition&lt;/h3&gt;&#xA;&lt;p&gt;A &lt;strong&gt;graph&lt;/strong&gt; $G$ is an ordered pair $G = (V, E)$ where:&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Mathematics in Web Publishing</title>
+				<link>http://localhost:64530/posts/mathematics-in-web-publishing/</link>
+				<pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:64530/posts/mathematics-in-web-publishing/</guid>
+				<description>&lt;p&gt;One of the challenges of technical writing on the web is properly rendering mathematical notation. With KaTeX, we can render both inline and display math beautifully.&lt;/p&gt;&#xA;&lt;h2 id=&#34;inline-math&#34;&gt;Inline Math&lt;/h2&gt;&#xA;&lt;p&gt;The quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ is one of the most well-known formulas in mathematics. We can also write Euler&amp;rsquo;s number $e \approx 2.71828$ inline.&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-math&#34;&gt;Display Math&lt;/h2&gt;&#xA;&lt;p&gt;Euler&amp;rsquo;s identity is often cited as the most beautiful equation:&lt;/p&gt;&#xA;&lt;p&gt;$$e^{i\pi} + 1 = 0$$&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
