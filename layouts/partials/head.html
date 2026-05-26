@@ -23,8 +23,8 @@
 {{- end }}
 <script>
   (function(){
-    var t=localStorage.getItem('theme-preference')||'auto';
-    var d=(t==='auto')?((window.matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light'):t;
+    var t=localStorage.getItem('theme-preference')||'light';
+    var d=t;
     document.documentElement.setAttribute('data-theme',d);
   })();
 </script>

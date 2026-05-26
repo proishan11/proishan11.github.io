@@ -4,12 +4,14 @@
   {{- partial "head.html" . -}}
 </head>
 <body>
+  <div class="reading-progress"></div>
   {{- partial "header.html" . -}}
   <div class="header-divider"></div>
   <main>
     {{- block "main" . }}{{- end }}
   </main>
   {{- partial "footer.html" . -}}
+  <button class="back-to-top" aria-label="Back to top">↑</button>
   <script src="{{ "js/theme.js" | relURL }}"></script>
 </body>
 </html>
