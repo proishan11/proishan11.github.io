@@ -23,7 +23,7 @@
 <meta name="twitter:site" content="@Mr_Wellick">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 <script>
   (function(){
@@ -72,26 +72,18 @@
     </div>
     <div class="sidebar-item">
       <div class="sidebar-label">Words</div>
-      <div class="sidebar-value">429</div>
-    </div>
-    <div class="sidebar-item">
-      <div class="sidebar-label">Read</div>
-      <div class="sidebar-value">3 Min</div>
+      <div class="sidebar-value">453</div>
     </div>
   </aside>
-  <article class="main-content">
+  <article class="main-content has-sidenotes">
     <div class="post-section-label">posts</div>
+    <div class="post-header-bar"></div>
     <h1 class="post-title">Local AI Needs to be the Norm</h1>
     
     <p class="post-subtitle">Local AI models should be the default.</p>
     
     <div class="post-meta">
-      <span>Filed <strong>2025-12-30</strong></span>
-      <span>Words <strong>429</strong></span>
-      <span>Read <strong>3 Min</strong></span>
-      
-      <span>By <strong>CYRUS</strong></span>
-      
+      <span class="reading-pill">3 Min Read</span>
     </div>
     
     <nav class="toc">
@@ -107,7 +99,8 @@
     
     <div class="post-body">
       <p>One of the current trends in modern software is for developers to slap an API call to OpenAI or Anthropic for features within their app. Reasonable people can quibble with whether those features are actually bringing value to users, but what I want to discuss is the fundamental concept of taking on a dependency to a cloud hosted AI model for applications.</p>
-<p>This laziness is creating a generation of software that is fragile, invades your privacy, and fundamentally broken. We are building applications that stop working the moment the server crashes or a credit card expires.</p>
+<p>This laziness is creating a generation of software that is fragile, invades your privacy, and fundamentally broken. We are building applications that stop working the moment the server crashes or a credit card expires. <span class="sidenote-wrap"><span class="sidenote-mark">*</span><span class="sidenote">Fun fact: In 2024, a major cloud provider outage took down AI features in thousands of apps simultaneously. Local models would have kept working.</span></span>
+</p>
 <p>We need to return to a habit of building software where our local devices do the work. The silicon in our pocket is mind bogglingly faster than what was available a decade ago. It has a dedicated Neural Engine sitting there, mostly idle, while we wait for a JSON response from a server farm in Virginia. That&rsquo;s ridiculous.</p>
 <h2 id="available-tooling">Available Tooling</h2>
 <p>I can only speak on the tooling available within the Apple ecosystem since that&rsquo;s what I focused initial development efforts on. In the last year, Apple has invested heavily here to allow developers to make use of a built-in local AI model easily.</p>

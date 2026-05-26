@@ -18,25 +18,27 @@
   <div class="main-content">
     <div class="post-section-label">Section · Bookshelf</div>
     <h1 class="list-page-title">Bookshelf</h1>
-
-    <blockquote class="bookshelf-quote">
-      What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
-      <cite>— Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)</cite>
-    </blockquote>
-
-    <p class="bookshelf-subtitle">Books that I am reading, have read, or will read</p>
+    <hr class="list-page-divider">
+    <div class="list-page-header">
+      <span>Books · By Year</span>
+      <span class="total">{{ printf "%03d" $totalBooks }} Total</span>
+    </div>
 
     {{ range $allBooks }}
-    <h2 class="bookshelf-year">{{ .year }}</h2>
-    <div class="bookshelf-grid">
-      {{ range .books }}
-      <div class="book-card">
-        <img class="book-cover" src="{{ .cover }}" alt="{{ .title }}" loading="lazy">
-        <span class="book-status {{ .status }}">{{ .status }}</span>
-        <div class="book-title">{{ .title }}</div>
-        <div class="book-author">{{ .author }}</div>
+    <div class="bookshelf-year-group">
+      <div class="bookshelf-year">{{ .year }}</div>
+      <div class="bookshelf-list">
+        {{ range .books }}
+        <div class="book-row">
+          <img class="book-cover-sm" src="{{ .cover }}" alt="{{ .title }}" loading="lazy">
+          <div class="book-info">
+            <div class="book-title">{{ .title }}</div>
+            <div class="book-author">{{ .author }}</div>
+          </div>
+          <span class="book-status {{ .status }}">{{ .status }}</span>
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
     {{ end }}
   </div>
