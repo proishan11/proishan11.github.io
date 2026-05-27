@@ -82,6 +82,14 @@ a:hover {
   padding: 1.25rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 2rem;
+}
+
+.header-sep {
+  flex: 1;
+  height: 40px;
+  border-right: 2px dotted var(--border);
+  margin-right: auto;
 }
 
 .site-brand {
@@ -131,7 +139,7 @@ a:hover {
 .nav-links a {
   font-family: var(--font);
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-secondary);
@@ -237,9 +245,6 @@ a:hover {
   gap: 3rem;
 }
 
-.content-wrapper:has(.has-sidenotes) {
-  overflow: visible;
-}
 
 /* ========== Sidebar ========== */
 
@@ -278,7 +283,8 @@ a:hover {
 .main-content {
   flex: 1;
   min-width: 0;
-  max-width: 720px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .post-section-label {
@@ -361,36 +367,24 @@ a:hover {
 
 /* ========== Sidenotes ========== */
 
-.has-sidenotes {
-  overflow: visible;
-}
-
-.has-sidenotes .post-body {
-  position: relative;
-}
-
 .sidenote-wrap {
-  position: static;
+  display: block;
 }
 
 .sidenote-mark {
-  display: inline;
-  color: var(--accent);
-  font-weight: 700;
-  cursor: default;
+  display: none;
 }
 
 .sidenote {
-  float: right;
-  clear: right;
-  width: 200px;
-  margin-right: -240px;
-  margin-bottom: 1rem;
-  font-size: 0.75rem;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.6rem 0.75rem;
+  border-left: 2px solid var(--accent);
+  background: var(--bg-secondary);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: var(--text-secondary);
-  border-left: 2px solid var(--accent);
-  padding-left: 0.75rem;
 }
 
 .sidenote img {
@@ -399,29 +393,10 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 1100px) {
-  .sidenote {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    display: block;
-    margin: 0.75rem 0;
-    padding: 0.6rem 0.75rem;
-    background: var(--bg-secondary);
-    border-left: 2px solid var(--accent);
-    border-radius: 0 4px 4px 0;
-    font-size: 0.8rem;
-  }
-
-  .sidenote-mark {
-    display: none;
-  }
-}
-
 /* ========== Article Body ========== */
 
 .post-body {
-  font-size: 1rem;
+  font-size: 0.92rem;
   line-height: 1.8;
   overflow: visible;
 }
@@ -670,6 +645,8 @@ a:hover {
   border-collapse: collapse;
   margin: 1.5rem 0;
   font-size: 0.9rem;
+  display: block;
+  overflow-x: auto;
 }
 
 .post-body th,
