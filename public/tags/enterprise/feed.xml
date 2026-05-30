@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Enterprise on ISH.SYS</title><link>https://proishan11.github.io/tags/enterprise/</link><description>Recent content in Enterprise on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/tags/enterprise/feed.xml" rel="self" type="application/rss+xml"/><item><title>Where Open Agent Policy Is Today</title><link>https://proishan11.github.io/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</guid><description>&lt;p&gt;Open Agent Policy is not just an idea anymore.&lt;/p&gt;
+&lt;p&gt;It has a server, schemas, a policy evaluator, a Python SDK, LangChain integration, MCP proxy support, an HTTP gateway, sessions, runs, scoped grants, Postgres storage, audit query, OPA and Cedar backend work, and a local validation environment.&lt;/p&gt;
+&lt;p&gt;That is enough to try the model seriously.&lt;/p&gt;
+&lt;p&gt;It is not the same thing as being enterprise-ready.&lt;/p&gt;
+&lt;p&gt;This post is the honest status.&lt;/p&gt;
+&lt;h2 id="the-short-version"&gt;The short version&lt;/h2&gt;
+&lt;p&gt;OAP is useful today if you want to:&lt;/p&gt;</description></item></channel></rss>

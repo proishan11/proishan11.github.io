@@ -4,7 +4,7 @@ subtitle: "Agent security only works when the protected resource can verify that
 date: 2026-05-28
 author: "Ishan"
 math: false
-draft: true
+draft: false
 tags:
   - agentic-ai
   - authorization

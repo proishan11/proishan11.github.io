@@ -4,7 +4,7 @@ subtitle: "A plain-language introduction to the security problem Open Agent Poli
 date: 2026-05-25
 author: "Ishan"
 math: false
-draft: true
+draft: false
 tags:
   - agentic-ai
   - security

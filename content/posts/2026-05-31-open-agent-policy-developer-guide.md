@@ -4,7 +4,7 @@ subtitle: "A technical walkthrough for protecting an agent, issuing scoped grant
 date: 2026-05-30
 author: "Ishan"
 math: false
-draft: true
+draft: false
 tags:
   - agentic-ai
   - security

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Developer-Guide on ISH.SYS</title><link>https://proishan11.github.io/tags/developer-guide/</link><description>Recent content in Developer-Guide on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/tags/developer-guide/feed.xml" rel="self" type="application/rss+xml"/><item><title>Open Agent Policy Developer Guide</title><link>https://proishan11.github.io/posts/2026-05-31-open-agent-policy-developer-guide/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-31-open-agent-policy-developer-guide/</guid><description>&lt;p&gt;This is the technical companion to the introductory Open Agent Policy posts.&lt;/p&gt;
+&lt;p&gt;The earlier posts explain the problem in plain English:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;agents need scoped access, not broad API keys&lt;/li&gt;
+&lt;li&gt;agent identity must be proven, not claimed&lt;/li&gt;
+&lt;li&gt;policy should answer agent + actor + action + resource + context&lt;/li&gt;
+&lt;li&gt;resource APIs should validate grants before serving data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This post is about the developer path.&lt;/p&gt;
+&lt;p&gt;The goal is to protect one agent action end to end:&lt;/p&gt;</description></item></channel></rss>

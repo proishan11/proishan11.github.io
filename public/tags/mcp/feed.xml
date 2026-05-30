@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mcp on ISH.SYS</title><link>https://proishan11.github.io/tags/mcp/</link><description>Recent content in Mcp on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/tags/mcp/feed.xml" rel="self" type="application/rss+xml"/><item><title>How Developers Can Use Open Agent Policy</title><link>https://proishan11.github.io/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</link><pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</guid><description>&lt;p&gt;Security frameworks only matter if developers can use them.&lt;/p&gt;
+&lt;p&gt;If protecting an agent requires rewriting the whole application, most teams will not do it. If the docs begin with distributed policy theory, most people will leave before they run the first example.&lt;/p&gt;
+&lt;p&gt;Open Agent Policy needs to be useful in a normal developer workflow:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I have an agent.&lt;/li&gt;
+&lt;li&gt;The agent has tools.&lt;/li&gt;
+&lt;li&gt;Some tools touch sensitive systems.&lt;/li&gt;
+&lt;li&gt;I want policy checks before those actions happen.&lt;/li&gt;
+&lt;li&gt;I want the resource API to verify proof before returning data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That is the adoption path.&lt;/p&gt;</description></item></channel></rss>

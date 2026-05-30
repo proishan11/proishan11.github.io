@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Policy on ISH.SYS</title><link>https://proishan11.github.io/tags/policy/</link><description>Recent content in Policy on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/tags/policy/feed.xml" rel="self" type="application/rss+xml"/><item><title>Policy for AI Agents, in Plain English</title><link>https://proishan11.github.io/posts/2026-05-27-building-open-agent-policy-spec-first/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-27-building-open-agent-policy-spec-first/</guid><description>&lt;p&gt;Policy can sound abstract.&lt;/p&gt;
+&lt;p&gt;In practice, an agent policy is just a clear answer to a practical question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is this agent allowed to take this action on this resource right now?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That question has to be answered before an agent reads customer data, sends an email, creates a refund, modifies a repository, runs a database query, or calls an internal API.&lt;/p&gt;
+&lt;p&gt;Open Agent Policy is built around making that question explicit.&lt;/p&gt;</description></item></channel></rss>

@@ -1,73 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on ISH.SYS</title>
-		<link>http://localhost:1313/posts/</link>
-		<description>Recent content in Posts on ISH.SYS</description>
-		<generator>Hugo</generator>
-		<language>en</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/posts/feed.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>From Prototype to Enterprise Agent Security</title>
-				<link>http://localhost:1313/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</link>
-				<pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</guid>
-				<description>&lt;!-- Voice pass: Add your honest assessment of where you want community feedback or collaborators. --&gt;&#xA;&lt;p&gt;Open Agent Policy has crossed an important line: it is no longer just a sketch of how agent authorization might work.&lt;/p&gt;&#xA;&lt;p&gt;The project now has a spec, schemas, conformance tests, a Go evaluator, a server, a Python SDK, LangChain integration, an MCP proxy, an HTTP gateway, sessions, runs, scoped grants, Postgres storage, audit query, OPA and Cedar backend adapters, and a production-like validation environment.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Protecting Agent Tools: SDK, MCP Proxy, and Gateway</title>
-				<link>http://localhost:1313/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</link>
-				<pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</guid>
-				<description>&lt;!-- Voice pass: Add a note about which integration felt most natural or surprising while building OAP. --&gt;&#xA;&lt;p&gt;Agent authorization is only useful if it sits in the path of real actions.&lt;/p&gt;&#xA;&lt;p&gt;That sounds obvious, but it is where many security designs get thin. A policy engine that works only in a demo function is not enough. Agents call tools through SDKs, framework abstractions, MCP servers, HTTP APIs, reverse proxies, and custom integration code.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Sessions, Runs, and Scoped Grants for Agents</title>
-				<link>http://localhost:1313/posts/2026-05-28-sessions-grants-and-proof-of-access/</link>
-				<pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026-05-28-sessions-grants-and-proof-of-access/</guid>
-				<description>&lt;!-- Voice pass: Add a concrete example from your support-agent validation environment here. --&gt;&#xA;&lt;p&gt;An authorization decision is useful, but it is not the whole enforcement story.&lt;/p&gt;&#xA;&lt;p&gt;Imagine an agent asks the policy server:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Can I read ticket T-100?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The policy server says yes. Now the agent calls the ticket API.&lt;/p&gt;&#xA;&lt;p&gt;How does the ticket API know the policy decision actually happened? How does it know the decision was for &lt;code&gt;ticket.read&lt;/code&gt;, not &lt;code&gt;customer.bulk_export&lt;/code&gt;? How does it know the grant was for T-100, not every ticket? How does it know constraints like redaction or record limits should be applied?&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Building Open Agent Policy Spec-First</title>
-				<link>http://localhost:1313/posts/2026-05-27-building-open-agent-policy-spec-first/</link>
-				<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026-05-27-building-open-agent-policy-spec-first/</guid>
-				<description>&lt;!-- Voice pass: Add a paragraph about why spec-driven development fits your way of building infrastructure. --&gt;&#xA;&lt;p&gt;Open Agent Policy is not just a server. It is a contract between agents, SDKs, gateways, proxies, resource APIs, CLIs, and policy engines.&lt;/p&gt;&#xA;&lt;p&gt;That is why I wanted the project to be spec-first.&lt;/p&gt;&#xA;&lt;p&gt;If the Python SDK constructs one shape of authorization request, the Go server interprets a slightly different shape, and the MCP proxy invents a third version, the project becomes a pile of adapters instead of a policy framework. Agent authorization is already subtle enough. The wire contract should not be.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Agent Identity Is Not a String</title>
-				<link>http://localhost:1313/posts/2026-05-26-agent-identity-is-not-a-string/</link>
-				<pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026-05-26-agent-identity-is-not-a-string/</guid>
-				<description>&lt;!-- Voice pass: Add an example of an agent identity bug or spoofing concern that made this design feel necessary. --&gt;&#xA;&lt;p&gt;Every agent security design eventually runs into the same trap: it starts with an &lt;code&gt;agent_id&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;That seems reasonable. We need to know which agent is acting, so we give it a stable identifier:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;agent://support/ticket-assistant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The problem is that a string is only a claim. It tells us what the caller wants to be called. It does not tell us whether the caller is actually that agent.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Why AI Agents Need a Control Plane</title>
-				<link>http://localhost:1313/posts/2026-05-25-why-ai-agents-need-a-control-plane/</link>
-				<pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/2026-05-25-why-ai-agents-need-a-control-plane/</guid>
-				<description>&lt;!-- Voice pass: Add the personal reason you started building OAP. A good place is after the opening paragraph. --&gt;&#xA;&lt;p&gt;The more useful an AI agent becomes, the less it looks like a chatbot and the more it looks like a distributed system component. It has tools. It has credentials. It reads tickets, queries databases, sends emails, opens pull requests, calls APIs, and sometimes chains those actions together without a human approving every single step.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Graph Algorithms: Mathematics &amp; Implementation</title>
-				<link>http://localhost:1313/posts/graph-algorithms-mathematics-and-implementation/</link>
-				<pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/graph-algorithms-mathematics-and-implementation/</guid>
-				<description>&lt;p&gt;Graphs are one of the most versatile data structures in computer science. They model everything from social networks to routing protocols to dependency resolution. In this post, we&amp;rsquo;ll build up graph theory from first principles — formal definitions, mathematical analysis, and clean Python implementations for each algorithm. &lt;span class=&#34;sidenote-wrap&#34;&gt;&lt;span class=&#34;sidenote-mark&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;sidenote&#34;&gt;This post assumes familiarity with basic data structures (arrays, hash maps, heaps) and Big-O notation.&lt;/span&gt;&lt;/span&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;foundations&#34;&gt;Foundations&lt;/h2&gt;&#xA;&lt;h3 id=&#34;formal-definition&#34;&gt;Formal Definition&lt;/h3&gt;&#xA;&lt;p&gt;A &lt;strong&gt;graph&lt;/strong&gt; $G$ is an ordered pair $G = (V, E)$ where:&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Mathematics in Web Publishing</title>
-				<link>http://localhost:1313/posts/mathematics-in-web-publishing/</link>
-				<pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/mathematics-in-web-publishing/</guid>
-				<description>&lt;p&gt;One of the challenges of technical writing on the web is properly rendering mathematical notation. With KaTeX, we can render both inline and display math beautifully.&lt;/p&gt;&#xA;&lt;h2 id=&#34;inline-math&#34;&gt;Inline Math&lt;/h2&gt;&#xA;&lt;p&gt;The quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ is one of the most well-known formulas in mathematics. We can also write Euler&amp;rsquo;s number $e \approx 2.71828$ inline.&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-math&#34;&gt;Display Math&lt;/h2&gt;&#xA;&lt;p&gt;Euler&amp;rsquo;s identity is often cited as the most beautiful equation:&lt;/p&gt;&#xA;&lt;p&gt;$$e^{i\pi} + 1 = 0$$&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on ISH.SYS</title><link>https://proishan11.github.io/posts/</link><description>Recent content in Posts on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/><item><title>Open Agent Policy Developer Guide</title><link>https://proishan11.github.io/posts/2026-05-31-open-agent-policy-developer-guide/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-31-open-agent-policy-developer-guide/</guid><description>&lt;p&gt;This is the technical companion to the introductory Open Agent Policy posts.&lt;/p&gt;
+&lt;p&gt;The earlier posts explain the problem in plain English:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;agents need scoped access, not broad API keys&lt;/li&gt;
+&lt;li&gt;agent identity must be proven, not claimed&lt;/li&gt;
+&lt;li&gt;policy should answer agent + actor + action + resource + context&lt;/li&gt;
+&lt;li&gt;resource APIs should validate grants before serving data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This post is about the developer path.&lt;/p&gt;
+&lt;p&gt;The goal is to protect one agent action end to end:&lt;/p&gt;</description></item><item><title>Where Open Agent Policy Is Today</title><link>https://proishan11.github.io/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</guid><description>&lt;p&gt;Open Agent Policy is not just an idea anymore.&lt;/p&gt;
+&lt;p&gt;It has a server, schemas, a policy evaluator, a Python SDK, LangChain integration, MCP proxy support, an HTTP gateway, sessions, runs, scoped grants, Postgres storage, audit query, OPA and Cedar backend work, and a local validation environment.&lt;/p&gt;
+&lt;p&gt;That is enough to try the model seriously.&lt;/p&gt;
+&lt;p&gt;It is not the same thing as being enterprise-ready.&lt;/p&gt;
+&lt;p&gt;This post is the honest status.&lt;/p&gt;
+&lt;h2 id="the-short-version"&gt;The short version&lt;/h2&gt;
+&lt;p&gt;OAP is useful today if you want to:&lt;/p&gt;</description></item><item><title>How Developers Can Use Open Agent Policy</title><link>https://proishan11.github.io/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</link><pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</guid><description>&lt;p&gt;Security frameworks only matter if developers can use them.&lt;/p&gt;
+&lt;p&gt;If protecting an agent requires rewriting the whole application, most teams will not do it. If the docs begin with distributed policy theory, most people will leave before they run the first example.&lt;/p&gt;
+&lt;p&gt;Open Agent Policy needs to be useful in a normal developer workflow:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I have an agent.&lt;/li&gt;
+&lt;li&gt;The agent has tools.&lt;/li&gt;
+&lt;li&gt;Some tools touch sensitive systems.&lt;/li&gt;
+&lt;li&gt;I want policy checks before those actions happen.&lt;/li&gt;
+&lt;li&gt;I want the resource API to verify proof before returning data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That is the adoption path.&lt;/p&gt;</description></item><item><title>Why Resource APIs Should Check Grants</title><link>https://proishan11.github.io/posts/2026-05-28-sessions-grants-and-proof-of-access/</link><pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-28-sessions-grants-and-proof-of-access/</guid><description>&lt;p&gt;The easiest place to add agent security is inside the agent.&lt;/p&gt;
+&lt;p&gt;Before a tool runs, ask the policy server for permission. If the answer is deny, do not run the tool.&lt;/p&gt;
+&lt;p&gt;That is a good start.&lt;/p&gt;
+&lt;p&gt;But it is not enough.&lt;/p&gt;
+&lt;p&gt;The resource still needs to protect itself.&lt;/p&gt;
+&lt;h2 id="the-bypass-problem"&gt;The bypass problem&lt;/h2&gt;
+&lt;p&gt;Imagine this flow:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Agent -&amp;gt; OAP -&amp;gt; ticket API
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The agent asks OAP, &amp;ldquo;Can I read ticket T-100?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;OAP says yes.&lt;/p&gt;</description></item><item><title>Policy for AI Agents, in Plain English</title><link>https://proishan11.github.io/posts/2026-05-27-building-open-agent-policy-spec-first/</link><pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-27-building-open-agent-policy-spec-first/</guid><description>&lt;p&gt;Policy can sound abstract.&lt;/p&gt;
+&lt;p&gt;In practice, an agent policy is just a clear answer to a practical question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Is this agent allowed to take this action on this resource right now?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That question has to be answered before an agent reads customer data, sends an email, creates a refund, modifies a repository, runs a database query, or calls an internal API.&lt;/p&gt;
+&lt;p&gt;Open Agent Policy is built around making that question explicit.&lt;/p&gt;</description></item><item><title>Agent Identity Is Not a String</title><link>https://proishan11.github.io/posts/2026-05-26-agent-identity-is-not-a-string/</link><pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-26-agent-identity-is-not-a-string/</guid><description>&lt;p&gt;Every agent access system eventually starts with a name.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;agent://support/ticket-assistant
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That name is useful. Policies need stable names. Audit logs need stable names. Humans need to know which agent did something.&lt;/p&gt;
+&lt;p&gt;But a name is not proof.&lt;/p&gt;
+&lt;p&gt;If a request says, &amp;ldquo;I am &lt;code&gt;agent://support/ticket-assistant&lt;/code&gt;,&amp;rdquo; the server still has to ask:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Why should I believe you?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That is the identity problem Open Agent Policy has to solve before policy can mean anything.&lt;/p&gt;</description></item><item><title>Why AI Agents Need an Access Control Plane</title><link>https://proishan11.github.io/posts/2026-05-25-why-ai-agents-need-a-control-plane/</link><pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-25-why-ai-agents-need-a-control-plane/</guid><description>&lt;p&gt;AI agents are becoming useful because they can do things.&lt;/p&gt;
+&lt;p&gt;They do not just answer questions. They call tools. They read tickets. They query databases. They send emails. They open pull requests. They summarize customer records. They may run for several steps before a human looks at the result.&lt;/p&gt;
+&lt;p&gt;That is the moment where an agent stops being &amp;ldquo;just a chatbot&amp;rdquo; and starts looking like a small software service.&lt;/p&gt;
+&lt;p&gt;And once an agent can touch real systems, we have to ask a security question:&lt;/p&gt;</description></item><item><title>Graph Algorithms: Mathematics &amp; Implementation</title><link>https://proishan11.github.io/posts/graph-algorithms-mathematics-and-implementation/</link><pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/graph-algorithms-mathematics-and-implementation/</guid><description>&lt;p&gt;Graphs are one of the most versatile data structures in computer science. They model everything from social networks to routing protocols to dependency resolution. In this post, we&amp;rsquo;ll build up graph theory from first principles — formal definitions, mathematical analysis, and clean Python implementations for each algorithm. &lt;span class="sidenote-wrap"&gt;&lt;span class="sidenote-mark"&gt;*&lt;/span&gt;&lt;span class="sidenote"&gt;This post assumes familiarity with basic data structures (arrays, hash maps, heaps) and Big-O notation.&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;h2 id="foundations"&gt;Foundations&lt;/h2&gt;
+&lt;h3 id="formal-definition"&gt;Formal Definition&lt;/h3&gt;
+&lt;p&gt;A &lt;strong&gt;graph&lt;/strong&gt; $G$ is an ordered pair $G = (V, E)$ where:&lt;/p&gt;</description></item><item><title>Mathematics in Web Publishing</title><link>https://proishan11.github.io/posts/mathematics-in-web-publishing/</link><pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/mathematics-in-web-publishing/</guid><description>&lt;p&gt;One of the challenges of technical writing on the web is properly rendering mathematical notation. With KaTeX, we can render both inline and display math beautifully.&lt;/p&gt;
+&lt;h2 id="inline-math"&gt;Inline Math&lt;/h2&gt;
+&lt;p&gt;The quadratic formula $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ is one of the most well-known formulas in mathematics. We can also write Euler&amp;rsquo;s number $e \approx 2.71828$ inline.&lt;/p&gt;
+&lt;h2 id="display-math"&gt;Display Math&lt;/h2&gt;
+&lt;p&gt;Euler&amp;rsquo;s identity is often cited as the most beautiful equation:&lt;/p&gt;
+&lt;p&gt;$$e^{i\pi} + 1 = 0$$&lt;/p&gt;</description></item></channel></rss>

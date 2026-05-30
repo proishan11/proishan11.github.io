@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Authorization on ISH.SYS</title><link>https://proishan11.github.io/tags/authorization/</link><description>Recent content in Authorization on ISH.SYS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://proishan11.github.io/tags/authorization/feed.xml" rel="self" type="application/rss+xml"/><item><title>Open Agent Policy Developer Guide</title><link>https://proishan11.github.io/posts/2026-05-31-open-agent-policy-developer-guide/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-31-open-agent-policy-developer-guide/</guid><description>&lt;p&gt;This is the technical companion to the introductory Open Agent Policy posts.&lt;/p&gt;
+&lt;p&gt;The earlier posts explain the problem in plain English:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;agents need scoped access, not broad API keys&lt;/li&gt;
+&lt;li&gt;agent identity must be proven, not claimed&lt;/li&gt;
+&lt;li&gt;policy should answer agent + actor + action + resource + context&lt;/li&gt;
+&lt;li&gt;resource APIs should validate grants before serving data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This post is about the developer path.&lt;/p&gt;
+&lt;p&gt;The goal is to protect one agent action end to end:&lt;/p&gt;</description></item><item><title>Why Resource APIs Should Check Grants</title><link>https://proishan11.github.io/posts/2026-05-28-sessions-grants-and-proof-of-access/</link><pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate><guid>https://proishan11.github.io/posts/2026-05-28-sessions-grants-and-proof-of-access/</guid><description>&lt;p&gt;The easiest place to add agent security is inside the agent.&lt;/p&gt;
+&lt;p&gt;Before a tool runs, ask the policy server for permission. If the answer is deny, do not run the tool.&lt;/p&gt;
+&lt;p&gt;That is a good start.&lt;/p&gt;
+&lt;p&gt;But it is not enough.&lt;/p&gt;
+&lt;p&gt;The resource still needs to protect itself.&lt;/p&gt;
+&lt;h2 id="the-bypass-problem"&gt;The bypass problem&lt;/h2&gt;
+&lt;p&gt;Imagine this flow:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Agent -&amp;gt; OAP -&amp;gt; ticket API
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The agent asks OAP, &amp;ldquo;Can I read ticket T-100?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;OAP says yes.&lt;/p&gt;</description></item></channel></rss>

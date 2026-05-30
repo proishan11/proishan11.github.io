@@ -4,7 +4,7 @@ subtitle: "The simple authorization question behind Open Agent Policy: who can d
 date: 2026-05-27
 author: "Ishan"
 math: false
-draft: true
+draft: false
 tags:
   - agentic-ai
   - policy
