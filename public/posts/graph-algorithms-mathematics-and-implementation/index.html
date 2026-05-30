@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64530&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Graph Algorithms: Mathematics &amp; Implementation | ISH.SYS</title>
 <meta name="description" content="Ishan&#39;s blog on distributed systems, agentic AI, and engineering">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="canonical" href="http://localhost:64530/posts/graph-algorithms-mathematics-and-implementation/">
+<link rel="canonical" href="http://localhost:1313/posts/graph-algorithms-mathematics-and-implementation/">
 
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="Graph Algorithms: Mathematics &amp; Implementation">
 <meta property="og:description" content="Ishan&#39;s blog on distributed systems, agentic AI, and engineering">
-<meta property="og:url" content="http://localhost:64530/posts/graph-algorithms-mathematics-and-implementation/">
+<meta property="og:url" content="http://localhost:1313/posts/graph-algorithms-mathematics-and-implementation/">
 <meta property="og:site_name" content="ISH.SYS">
 <meta property="article:published_time" content="2025-12-31T00:00:00Z">
 <meta property="article:author" content="Ishan">
@@ -24,8 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/style.css?v=dbcac399a6bf">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
@@ -65,78 +64,18 @@
 </header>
 <main>
 <div class="content-wrapper">
-  <aside class="sidebar">
-    <div class="sidebar-item">
-      <div class="sidebar-label">Section</div>
-      <div class="sidebar-value">POSTS</div>
-    </div>
-    <div class="sidebar-item">
-      <div class="sidebar-label">Filed</div>
-      <div class="sidebar-value">2025-12-31</div>
-    </div>
-    <div class="sidebar-item">
-      <div class="sidebar-label">Words</div>
-      <div class="sidebar-value">3165</div>
-    </div>
-  </aside>
-  <article class="main-content has-sidenotes">
+  <article class="main-content">
     <div class="post-header-bar"></div>
     <h1 class="post-title">Graph Algorithms: Mathematics &amp; Implementation</h1>
     
     <p class="post-subtitle">A deep dive into graph theory, from formal definitions to working Python code.</p>
     
+    
     <div class="post-meta">
       <span class="reading-pill">15 Min Read</span>
+      <span>Dec 31, 2025</span>
+      <span>3165 Words</span>
     </div>
-    
-    <nav class="toc">
-      <div class="toc-title">Contents</div>
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#foundations">Foundations</a>
-      <ul>
-        <li><a href="#formal-definition">Formal Definition</a></li>
-        <li><a href="#graph-representations">Graph Representations</a></li>
-      </ul>
-    </li>
-    <li><a href="#traversal-algorithms">Traversal Algorithms</a>
-      <ul>
-        <li><a href="#breadth-first-search-bfs">Breadth-First Search (BFS)</a></li>
-        <li><a href="#depth-first-search-dfs">Depth-First Search (DFS)</a></li>
-        <li><a href="#connected-components">Connected Components</a></li>
-      </ul>
-    </li>
-    <li><a href="#shortest-path-algorithms">Shortest Path Algorithms</a>
-      <ul>
-        <li><a href="#dijkstras-algorithm">Dijkstra&rsquo;s Algorithm</a></li>
-        <li><a href="#bellman-ford-algorithm">Bellman-Ford Algorithm</a></li>
-        <li><a href="#dijkstra-vs-bellman-ford">Dijkstra vs Bellman-Ford</a></li>
-      </ul>
-    </li>
-    <li><a href="#minimum-spanning-trees">Minimum Spanning Trees</a>
-      <ul>
-        <li><a href="#cut-property">Cut Property</a></li>
-        <li><a href="#kruskals-algorithm">Kruskal&rsquo;s Algorithm</a></li>
-        <li><a href="#prims-algorithm">Prim&rsquo;s Algorithm</a></li>
-      </ul>
-    </li>
-    <li><a href="#topological-sort">Topological Sort</a>
-      <ul>
-        <li><a href="#dfs-based-topological-sort">DFS-Based Topological Sort</a></li>
-        <li><a href="#kahns-algorithm-bfs-based">Kahn&rsquo;s Algorithm (BFS-Based)</a></li>
-      </ul>
-    </li>
-    <li><a href="#strongly-connected-components">Strongly Connected Components</a>
-      <ul>
-        <li><a href="#kosarajus-algorithm">Kosaraju&rsquo;s Algorithm</a></li>
-      </ul>
-    </li>
-    <li><a href="#floyd-warshall-all-pairs-shortest-paths">Floyd-Warshall: All-Pairs Shortest Paths</a></li>
-    <li><a href="#complexity-summary">Complexity Summary</a></li>
-    <li><a href="#further-reading">Further Reading</a></li>
-  </ul>
-</nav>
-    </nav>
     
     <div class="post-body">
       <p>Graphs are one of the most versatile data structures in computer science. They model everything from social networks to routing protocols to dependency resolution. In this post, we&rsquo;ll build up graph theory from first principles — formal definitions, mathematical analysis, and clean Python implementations for each algorithm. <span class="sidenote-wrap"><span class="sidenote-mark">*</span><span class="sidenote">This post assumes familiarity with basic data structures (arrays, hash maps, heaps) and Big-O notation.</span></span>

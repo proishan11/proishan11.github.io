@@ -44,7 +44,6 @@
     // Reading progress bar + accent on scroll
     var progress = document.querySelector(".reading-progress");
     var divider = document.querySelector(".header-divider");
-    var sidebar = document.querySelector(".sidebar");
     var btt = document.querySelector(".back-to-top");
 
     window.addEventListener("scroll", function () {
@@ -58,7 +57,6 @@
       // Accent on scroll
       var scrolled = y > 60;
       if (divider) divider.classList.toggle("scrolled", scrolled);
-      if (sidebar) sidebar.classList.toggle("scrolled", scrolled);
 
       // Back to top
       if (btt) btt.classList.toggle("visible", y > 400);

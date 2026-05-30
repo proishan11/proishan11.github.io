@@ -10,9 +10,51 @@
 		
 		
 		
-			<lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>From Prototype to Enterprise Agent Security</title>
+				<link>http://localhost:1313/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</link>
+				<pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-05-30-from-prototype-to-enterprise-agent-security/</guid>
+				<description>&lt;!-- Voice pass: Add your honest assessment of where you want community feedback or collaborators. --&gt;&#xA;&lt;p&gt;Open Agent Policy has crossed an important line: it is no longer just a sketch of how agent authorization might work.&lt;/p&gt;&#xA;&lt;p&gt;The project now has a spec, schemas, conformance tests, a Go evaluator, a server, a Python SDK, LangChain integration, an MCP proxy, an HTTP gateway, sessions, runs, scoped grants, Postgres storage, audit query, OPA and Cedar backend adapters, and a production-like validation environment.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Protecting Agent Tools: SDK, MCP Proxy, and Gateway</title>
+				<link>http://localhost:1313/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</link>
+				<pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-05-29-protecting-agent-tools-sdk-mcp-gateway/</guid>
+				<description>&lt;!-- Voice pass: Add a note about which integration felt most natural or surprising while building OAP. --&gt;&#xA;&lt;p&gt;Agent authorization is only useful if it sits in the path of real actions.&lt;/p&gt;&#xA;&lt;p&gt;That sounds obvious, but it is where many security designs get thin. A policy engine that works only in a demo function is not enough. Agents call tools through SDKs, framework abstractions, MCP servers, HTTP APIs, reverse proxies, and custom integration code.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Sessions, Runs, and Scoped Grants for Agents</title>
+				<link>http://localhost:1313/posts/2026-05-28-sessions-grants-and-proof-of-access/</link>
+				<pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-05-28-sessions-grants-and-proof-of-access/</guid>
+				<description>&lt;!-- Voice pass: Add a concrete example from your support-agent validation environment here. --&gt;&#xA;&lt;p&gt;An authorization decision is useful, but it is not the whole enforcement story.&lt;/p&gt;&#xA;&lt;p&gt;Imagine an agent asks the policy server:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Can I read ticket T-100?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The policy server says yes. Now the agent calls the ticket API.&lt;/p&gt;&#xA;&lt;p&gt;How does the ticket API know the policy decision actually happened? How does it know the decision was for &lt;code&gt;ticket.read&lt;/code&gt;, not &lt;code&gt;customer.bulk_export&lt;/code&gt;? How does it know the grant was for T-100, not every ticket? How does it know constraints like redaction or record limits should be applied?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Building Open Agent Policy Spec-First</title>
+				<link>http://localhost:1313/posts/2026-05-27-building-open-agent-policy-spec-first/</link>
+				<pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-05-27-building-open-agent-policy-spec-first/</guid>
+				<description>&lt;!-- Voice pass: Add a paragraph about why spec-driven development fits your way of building infrastructure. --&gt;&#xA;&lt;p&gt;Open Agent Policy is not just a server. It is a contract between agents, SDKs, gateways, proxies, resource APIs, CLIs, and policy engines.&lt;/p&gt;&#xA;&lt;p&gt;That is why I wanted the project to be spec-first.&lt;/p&gt;&#xA;&lt;p&gt;If the Python SDK constructs one shape of authorization request, the Go server interprets a slightly different shape, and the MCP proxy invents a third version, the project becomes a pile of adapters instead of a policy framework. Agent authorization is already subtle enough. The wire contract should not be.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Agent Identity Is Not a String</title>
+				<link>http://localhost:1313/posts/2026-05-26-agent-identity-is-not-a-string/</link>
+				<pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-05-26-agent-identity-is-not-a-string/</guid>
+				<description>&lt;!-- Voice pass: Add an example of an agent identity bug or spoofing concern that made this design feel necessary. --&gt;&#xA;&lt;p&gt;Every agent security design eventually runs into the same trap: it starts with an &lt;code&gt;agent_id&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;That seems reasonable. We need to know which agent is acting, so we give it a stable identifier:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;agent://support/ticket-assistant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The problem is that a string is only a claim. It tells us what the caller wants to be called. It does not tell us whether the caller is actually that agent.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Why AI Agents Need a Control Plane</title>
+				<link>http://localhost:1313/posts/2026-05-25-why-ai-agents-need-a-control-plane/</link>
+				<pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-05-25-why-ai-agents-need-a-control-plane/</guid>
+				<description>&lt;!-- Voice pass: Add the personal reason you started building OAP. A good place is after the opening paragraph. --&gt;&#xA;&lt;p&gt;The more useful an AI agent becomes, the less it looks like a chatbot and the more it looks like a distributed system component. It has tools. It has credentials. It reads tickets, queries databases, sends emails, opens pull requests, calls APIs, and sometimes chains those actions together without a human approving every single step.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Graph Algorithms: Mathematics &amp; Implementation</title>
 				<link>http://localhost:1313/posts/graph-algorithms-mathematics-and-implementation/</link>

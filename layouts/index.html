@@ -2,16 +2,6 @@
 {{ $posts := (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
 {{ $count := len $posts }}
 <div class="content-wrapper">
-  <aside class="sidebar">
-    <div class="sidebar-item">
-      <div class="sidebar-label">Section</div>
-      <div class="sidebar-value">POSTS</div>
-    </div>
-    <div class="sidebar-item">
-      <div class="sidebar-label">Pages</div>
-      <div class="sidebar-value">{{ printf "%03d" $count }}</div>
-    </div>
-  </aside>
   <div class="main-content">
     <h1 class="list-page-title">All Posts</h1>
     <hr class="list-page-divider">
